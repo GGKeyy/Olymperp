@@ -1,0 +1,241 @@
+<html><head><base href="https://olympe-fivem.render.com/entreprises">
+<title>Entreprises - Olympe FiveM</title>
+</head>
+<body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://cdn.discordapp.com/attachments/1218979840355602604/1265848628644151407/Untitlecompressd-111_1.png?ex=66a3a9a7&is=66a25827&hm=4255d075179bab2c0976d52be37d1b1f2136fc8c3c09876a5af8ff3171d75cf6&');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  header {
+    background-color: rgba(26, 26, 26, 0.9);
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  }
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  h1 {
+    color: #ffd700;
+    font-size: 24px;
+    margin: 0;
+  }
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  nav ul li {
+    margin-left: 20px;
+  }
+  nav ul li a {
+    color: #ffd700;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  nav ul li a:hover {
+    color: #ffffff;
+  }
+  .page-title {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 40px;
+  }
+  .page-title h2 {
+    color: #ffd700;
+    font-size: 36px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  .entreprises-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  .entreprise-card {
+    background-color: rgba(51, 51, 51, 0.8);
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .entreprise-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3);
+  }
+  .entreprise-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #ffd700;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 10px;
+  }
+  .entreprise-icon svg {
+    width: 24px;
+    height: 24px;
+    fill: #1a1a1a;
+  }
+  .entreprise-name {
+    color: #ffd700;
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  .entreprise-description {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  footer {
+    background-color: rgba(26, 26, 26, 0.9);
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+  }
+</style>
+
+<header>
+  <div class="header-content">
+    <h1>Olympe FiveM</h1>
+    <nav>
+      <ul>
+        <li><a href="https://fivem.olymperp.xyz">Accueil</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="container">
+  <div class="page-title">
+    <h2>Entreprises d'Olympe</h2>
+  </div>
+
+  <div class="entreprises-grid">
+    <div class="entreprise-card">
+      <div class="entreprise-icon">
+        <svg viewBox="0 0 24 24">
+          <path d="M18 14h-4v4h4v-4zm-6 0H8v4h4v-4zM6 14H2v4h4v-4zm12-4h-4v4h4v-4zm-6 0H8v4h4v-4zM6 10H2v4h4v-4zm12-4h-4v4h4V6zm-6 0H8v4h4V6zM6 6H2v4h4V6z"/>
+        </svg>
+      </div>
+      <div class="entreprise-name">Hôpital Central</div>
+      <div class="entreprise-description">Centre médical principal de la ville, offrant des soins de qualité à tous les citoyens.</div>
+    </div>
+    
+    <div class="entreprise-card">
+      <div class="entreprise-icon">
+        <svg viewBox="0 0 24 24">
+          <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/>
+        </svg>
+      </div>
+      <div class="entreprise-name">SASP</div>
+      <div class="entreprise-description">Force de l'ordre principale, assurant la sécurité et la paix dans la ville.</div>
+    </div>
+    
+    <div class="entreprise-card">
+      <div class="entreprise-icon">
+        <svg viewBox="0 0 24 24">
+          <path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"/>
+        </svg>
+      </div>
+      <div class="entreprise-name">Concessionnaire</div>
+      <div class="entreprise-description">Le meilleur endroit pour acheter et personnaliser vos véhicules de rêve.</div>
+    </div>
+    
+    <div class="entreprise-card">
+      <div class="entreprise-icon">
+        <svg viewBox="0 0 24 24">
+          <path d="M21 9H3V3h18v6zm0 4H3v8h18v-8zM4 5h16v2H4V5zm0 8h16v2H4v-2z"/>
+        </svg>
+      </div>
+      <div class="entreprise-name">Burger Shot</div>
+      <div class="entreprise-description">Restaurant rapide emblématique, servant les meilleurs burgers de la ville.</div>
+    </div>
+    
+    
+    <div class="entreprise-card">
+      <div class="entreprise-icon">
+        <svg viewBox="0 0 24 24">
+          <path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/>
+        </svg>
+      </div>
+      <div class="entreprise-name">Benny's</div>
+      <div class="entreprise-description">Atelier de customisation automobile de renommée mondiale.</div>
+    </div>
+    
+    <div class="entreprise-card">
+      <div class="entreprise-icon">
+        <svg viewBox="0 0 24 24">
+          <path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5H15V3H9v2H6.5c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"/>
+        </svg>
+      </div>
+      <div class="entreprise-name">Downtown Cab Co.</div>
+      <div class="entreprise-description">Service de taxi fiable pour vous déplacer rapidement dans toute la ville.</div>
+    </div>
+
+     
+    
+        
+
+
+<script>
+$(document).ready(function() {
+  // Animation d'apparition des cartes d'entreprises
+  $('.entreprise-card').each(function(index) {
+    $(this).css('opacity', '0').delay(100 * index).animate({
+      opacity: 1,
+      top: '0'
+    }, 1000);
+  });
+
+  // Effet de survol sur les cartes d'entreprises
+  $('.entreprise-card').hover(
+    function() {
+      $(this).find('.entreprise-icon').stop().animate({ width: '45px', height: '45px' }, 200);
+      $(this).find('.entreprise-icon svg').stop().animate({ width: '28px', height: '28px' }, 200);
+    },
+    function() {
+      $(this).find('.entreprise-icon').stop().animate({ width: '40px', height: '40px' }, 200);
+      $(this).find('.entreprise-icon svg').stop().animate({ width: '24px', height: '24px' }, 200);
+    }
+  );
+
+  // Animation du titre de la page
+  $('.page-title').css('opacity', '0').animate({
+    opacity: 1,
+    top: '0'
+  }, 1000);
+
+  // Effet de parallaxe sur l'image de fond
+  $(window).scroll(function() {
+    var scrollPosition = $(this).scrollTop();
+    $('body').css('background-position', 'center ' + -(scrollPosition * 0.2) + 'px');
+  });
+});
+</script>
+</body>
+</html>
